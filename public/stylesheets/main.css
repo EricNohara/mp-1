@@ -21,7 +21,7 @@
 main {
   width: 70%;
   min-height: calc(100vh - 8.7rem);
-  padding: 1rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -33,6 +33,11 @@ main > h2 {
 }
 
 img {
+  border-radius: 0.5rem;
+  max-width: 400px;
+}
+
+.portrait-img {
   height: 200px;
   width: 200px;
 }

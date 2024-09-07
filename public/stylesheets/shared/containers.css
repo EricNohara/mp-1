@@ -11,3 +11,59 @@
 .bio-container > p {
   padding: 1rem;
 }
+
+.subcontent-container {
+  padding: 1rem;
+  border-top: 0.25rem solid var(--app-header-footer-background-color);
+  border-bottom: 0.25rem solid var(--app-header-footer-background-color);
+  border-radius: 1rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.subcontent-container > h2 {
+  margin-bottom: 0.5rem;
+}
+
+.subcontent-container > b {
+  margin-bottom: 0.75rem;
+}
+
+.subcontent-container > ul > li {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.subcontent-container > ul {
+  align-self: flex-start;
+}
+
+.img-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.img-content-container > ul {
+  margin-left: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .img-content-container {
+    flex-direction: column;
+  }
+
+  .img-content-container > ul {
+    margin: 0;
+    margin-top: 1rem;
+  }
+
+  .img-content-container > img {
+    margin-top: 1rem;
+  }
+}
