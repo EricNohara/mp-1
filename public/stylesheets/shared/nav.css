@@ -17,10 +17,12 @@ nav > ul > li {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  transition-duration: 0.2s;
 }
 
 nav > ul > li:hover {
   background-color: var(--app-nav-hover-background-color);
+  transition-duration: 0.2s;
 }
 
 @media (max-width: 750px) {

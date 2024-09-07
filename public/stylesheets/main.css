@@ -1,6 +1,7 @@
 @import "../stylesheets/shared/variables.css";
 @import "../stylesheets/shared/nav.css";
 @import "../stylesheets/shared/headerFooter.css";
+@import "../stylesheets/shared/containers.css";
 
 :root {
   font-family: var(--app-font-family);
@@ -21,6 +22,19 @@ main {
   width: 70%;
   min-height: calc(100vh - 8.7rem);
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+main > h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+img {
+  height: 200px;
+  width: 200px;
 }
 
 .page-content-container {
@@ -31,4 +45,16 @@ main {
   main {
     width: 100%;
   }
+}
+
+a {
+  text-decoration: none;
+  color: var(--app-link-color);
+  transition-duration: 0.2s;
+}
+
+a:hover {
+  font-weight: bold;
+  text-shadow: 0 0 20px white;
+  transition-duration: 0.2s;
 }

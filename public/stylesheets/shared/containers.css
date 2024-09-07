@@ -1,0 +1,13 @@
+.education-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.bio-container {
+  display: flex;
+  align-items: center;
+}
+
+.bio-container > p {
+  padding: 1rem;
+}
