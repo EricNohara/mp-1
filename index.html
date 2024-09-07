@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/public/stylesheets/main.css" />
     <title>Online Resume</title>
   </head>
   <body>
@@ -10,39 +17,42 @@
       <h1>Eric Nohara-LeClair</h1>
       <h2>My Online Resume</h2>
     </header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="views/education.html">Education</a></li>
-        <li><a href="views/experiences.html">Work Experience</a></li>
-        <li><a href="views/projects.html">Projects</a></li>
-        <li><a href="views/skills.html">Skills</a></li>
-        <li><a href="views/references.html">References</a></li>
-      </ul>
-    </nav>
-    <main>
-      <h2>Home</h2>
-      <img
-        src="imgs/Eric_Portrait_Square.jpg"
-        alt="Eric Professional Headshot"
-        loading="lazy"
-        height="200px"
-      />
-      <p>
-        Hello, my name is Eric Nohara-LeClair and I am a current junior at
-        Boston University. I will be furthering my education by pursuing a
-        masters degree of Computer Science at Boston University through the
-        BA/MS program. I am a fullstack developer with interests in embedded
-        programming and game development.
-      </p>
-      <p>
-        Come check out my <a href="views/education.html">education</a> and
-        <a href="views/projects.html">projects</a> to get to know me better!
-      </p>
-    </main>
+    <div class="page-content-container">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="views/education.html">Education</a></li>
+          <li><a href="views/experiences.html">Work Experience</a></li>
+          <li><a href="views/projects.html">Projects</a></li>
+          <li><a href="views/skills.html">Skills</a></li>
+          <li><a href="views/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h2>Home</h2>
+        <img
+          src="/public/imgs/Eric_Portrait_Square.jpg"
+          alt="Eric Professional Headshot"
+          loading="lazy"
+          height="200px"
+        />
+        <p>
+          Hello, my name is Eric Nohara-LeClair and I am a current junior at
+          Boston University. I will be furthering my education by pursuing a
+          masters degree of Computer Science at Boston University through the
+          BA/MS program. I am a fullstack developer with interests in embedded
+          programming and game development.
+        </p>
+        <p>
+          Come check out my <a href="views/education.html">education</a> and
+          <a href="views/projects.html">projects</a> to get to know me better!
+        </p>
+      </main>
+    </div>
     <footer>
       <p>
-        All Rights Reserved by Eric Nohara-LeClair <a href="">Credits</a> &copy
+        All Rights Reserved by Eric Nohara-LeClair
+        <a href="">(Credits)</a> &copy
       </p>
     </footer>
   </body>

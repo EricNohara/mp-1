@@ -1,0 +1,8 @@
+:root {
+  --app-font-family: "Inconsolata", sans-serif;
+  --app-text-color: rgb(228, 228, 228);
+  --app-background-color: #1b1b1b;
+  --app-header-footer-background-color: #004a77;
+  --app-nav-background-color: #37393b;
+  --app-nav-hover-background-color: #54575a;
+}
