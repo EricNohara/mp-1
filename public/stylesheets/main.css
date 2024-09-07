@@ -26,3 +26,9 @@ main {
 .page-content-container {
   display: flex;
 }
+
+@media (max-width: 750px) {
+  main {
+    width: 100%;
+  }
+}
