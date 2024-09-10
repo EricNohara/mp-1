@@ -14,6 +14,15 @@ function getInputVals() {
   return [num1, num2];
 }
 
+function formatOutput(sol) {
+  output.innerHTML = sol;
+  if (sol < 0) {
+    output.style.color = "red";
+  } else {
+    output.style.color = "white";
+  }
+}
+
 function clearInputFields() {
   num1Input.value = "";
   num2Input.value = "";
@@ -22,45 +31,48 @@ function clearInputFields() {
 addBtn.addEventListener("click", (e) => {
   e.preventDefault();
   const [num1, num2] = getInputVals();
-  clearInputFields();
-  output.innerHTML = num1 + num2;
+  const sol = num1 + num2;
+  formatOutput(sol);
 });
 
 minusBtn.addEventListener("click", (e) => {
-  e.preventDefault;
+  e.preventDefault();
   const [num1, num2] = getInputVals();
-  clearInputFields();
-  output.innerHTML = num1 - num2;
+  const sol = num1 - num2;
+  formatOutput(sol);
 });
 
 timesBtn.addEventListener("click", (e) => {
-  e.preventDefault;
+  e.preventDefault();
   const [num1, num2] = getInputVals();
-  clearInputFields();
-  output.innerHTML = num1 * num2;
+  const sol = num1 * num2;
+  formatOutput(sol);
 });
 
 divideBtn.addEventListener("click", (e) => {
-  e.preventDefault;
+  e.preventDefault();
   const [num1, num2] = getInputVals();
-  clearInputFields();
-  output.innerHTML = num1 / num2;
+  const sol = num1 / num2;
+  formatOutput(sol);
 });
 
 powerBtn.addEventListener("click", (e) => {
-  e.preventDefault;
+  e.preventDefault();
   const [num1, num2] = getInputVals();
-  clearInputFields();
 
-  let product = 1;
-  for (let i = 0; i < num2; i++) {
-    product *= num1;
+  let sol = 1;
+  const exponent = Math.abs(num2);
+  for (let i = 0; i < exponent; i++) {
+    sol *= num1;
   }
 
-  output.innerHTML = product;
+  sol = num2 < 0 ? 1 / sol : sol;
+
+  formatOutput(sol);
 });
 
 clearBtn.addEventListener("click", (e) => {
   e.preventDefault();
   clearInputFields();
+  output.innerHTML = "";
 });
