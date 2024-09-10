@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/public/stylesheets/main.css" />
+    <script defer src="/public/javascripts/calculator.js"></script>
     <title>Online Resume</title>
   </head>
   <body>
@@ -136,6 +137,20 @@
               </li>
             </ul>
           </div>
+        </div>
+        <div class="subcontent-container">
+          <h2>Calculator</h2>
+          <form action="">
+            <input id="num1-input" type="number" required />
+            <input id="num2-input" type="number" required />
+            <button id="add-btn">+</button>
+            <button id="minus-btn">-</button>
+            <button id="times-btn">*</button>
+            <button id="divide-btn">/</button>
+            <button id="power-btn">**</button>
+            <button id="clear-btn">Clear</button>
+            <h3 id="output"></h3>
+          </form>
         </div>
       </main>
     </div>

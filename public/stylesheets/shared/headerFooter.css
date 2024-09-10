@@ -8,6 +8,10 @@ footer {
   padding: 1rem;
 }
 
+header {
+  padding-left: 3rem;
+}
+
 footer {
   align-items: center;
   font-weight: 300;
@@ -26,5 +30,6 @@ header > h2 {
 @media (max-width: 750px) {
   header {
     align-items: center;
+    padding-left: 0;
   }
 }
