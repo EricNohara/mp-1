@@ -139,17 +139,31 @@
           </div>
         </div>
         <div class="subcontent-container">
-          <h2>Calculator</h2>
-          <form action="">
-            <input id="num1-input" type="number" required />
-            <input id="num2-input" type="number" required />
-            <button id="add-btn">+</button>
-            <button id="minus-btn">-</button>
-            <button id="times-btn">*</button>
-            <button id="divide-btn">/</button>
-            <button id="power-btn">**</button>
-            <button id="clear-btn">Clear</button>
-            <h3 id="output"></h3>
+          <h2>Simple Calculator</h2>
+          <form id="calculator">
+            <input
+              id="num1-input"
+              type="number"
+              placeholder="Number 1"
+              required
+            />
+            <input
+              id="num2-input"
+              type="number"
+              placeholder="Number 2"
+              required
+            />
+            <div class="calc-btn-container">
+              <button id="add-btn">+</button>
+              <button id="minus-btn">-</button>
+              <button id="power-btn">**</button>
+              <button id="divide-btn">/</button>
+              <button id="times-btn">*</button>
+              <button id="clear-btn">Clear</button>
+            </div>
+            <div class="calc-output-container">
+              <h3 id="output"></h3>
+            </div>
           </form>
         </div>
       </main>

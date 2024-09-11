@@ -9,6 +9,19 @@ const num2Input = document.getElementById("num2-input");
 const output = document.getElementById("output");
 
 function getInputVals() {
+  let valuesExist = true;
+  if (num1Input.value === "") {
+    num1Input.classList.add("warning");
+    valuesExist = false;
+  }
+  if (num2Input.value === "") {
+    num2Input.classList.add("warning");
+    valuesExist = false;
+  }
+
+  if (!valuesExist) throw new Error("Error: invalid input");
+  else resetPlaceholderColor();
+
   const num1 = Number(num1Input.value);
   const num2 = Number(num2Input.value);
   return [num1, num2];
@@ -19,13 +32,23 @@ function formatOutput(sol) {
   if (sol < 0) {
     output.style.color = "red";
   } else {
-    output.style.color = "white";
+    output.style.color = "black";
   }
 }
 
 function clearInputFields() {
   num1Input.value = "";
   num2Input.value = "";
+
+  resetPlaceholderColor();
+}
+
+function resetPlaceholderColor() {
+  if (num1Input.classList.contains("warning"))
+    num1Input.classList.remove("warning");
+
+  if (num2Input.classList.contains("warning"))
+    num2Input.classList.remove("warning");
 }
 
 addBtn.addEventListener("click", (e) => {
@@ -58,7 +81,12 @@ divideBtn.addEventListener("click", (e) => {
 
 powerBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  const [num1, num2] = getInputVals();
+  let num1, num2;
+  try {
+    [num1, num2] = getInputVals();
+  } catch (err) {
+    console.error(err);
+  }
 
   let sol = 1;
   const exponent = Math.abs(num2);

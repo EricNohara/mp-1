@@ -6,4 +6,8 @@
   --app-nav-background-color: #37393b;
   --app-nav-hover-background-color: #54575a;
   --app-link-color: #83c6f0;
+  --calc-btn-color: #ff9f0a;
+  --calc-btn-color-active: #9f6207;
+  --calc-input-color: #333333;
+  --calc-output-color: #a5a5a5;
 }

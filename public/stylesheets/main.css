@@ -2,6 +2,7 @@
 @import "../stylesheets/shared/nav.css";
 @import "../stylesheets/shared/headerFooter.css";
 @import "../stylesheets/shared/containers.css";
+@import "../stylesheets/shared/calculator.css";
 
 :root {
   font-family: var(--app-font-family);

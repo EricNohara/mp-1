@@ -1,0 +1,71 @@
+#calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-top: 2rem;
+  background-color: black;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+#calculator > input {
+  width: 100%;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  font-family: inherit;
+  background-color: var(--calc-input-color);
+  border: none;
+  color: white;
+}
+
+.calc-output-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 3.5rem;
+  background-color: var(--calc-output-color);
+  border-radius: 1rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.calc-btn-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(2, 5rem);
+  justify-items: center;
+  align-items: center;
+}
+
+.calc-btn-container > button {
+  width: 75%;
+  height: 75%;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  background-color: var(--calc-btn-color);
+  color: white;
+  border: none;
+}
+
+#clear-btn {
+  font-size: 2vw;
+}
+
+.calc-btn-container > button:hover {
+  cursor: pointer;
+}
+
+.calc-btn-container > button:active {
+  background-color: var(--calc-btn-color-active);
+}
+
+.warning::placeholder {
+  color: red;
+}
