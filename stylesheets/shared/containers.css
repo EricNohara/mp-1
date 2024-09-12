@@ -54,11 +54,13 @@
   margin-left: 2rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .img-content-container {
     flex-direction: column;
   }
+}
 
+@media (max-width: 1000px) {
   .img-content-container > ul {
     margin: 0;
     margin-top: 1rem;

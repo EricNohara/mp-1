@@ -36,11 +36,12 @@ main > h2 {
 img {
   border-radius: 0.5rem;
   max-width: 400px;
+  height: auto;
 }
 
 .portrait-img {
-  height: 200px;
-  width: 200px;
+  height: auto;
+  max-width: 200px;
 }
 
 .page-content-container {
@@ -50,6 +51,18 @@ img {
 @media (max-width: 750px) {
   main {
     width: 100%;
+  }
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  p {
+    font-size: 0.9rem !important;
+  }
+  li {
+    font-size: 0.9rem !important;
+  }
+  img {
+    max-width: 300px;
   }
 }
 

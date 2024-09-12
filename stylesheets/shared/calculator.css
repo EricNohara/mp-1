@@ -31,7 +31,7 @@
   background-color: var(--calc-output-color);
   border-radius: 1rem;
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: calc(2vw);
 }
 
 .calc-btn-container {

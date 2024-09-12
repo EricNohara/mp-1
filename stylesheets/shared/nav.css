@@ -33,6 +33,13 @@ nav > ul > li:hover {
     width: 100%;
   }
   nav > ul {
-    display: flex;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    border: 2px solid var(--app-background-color);
+  }
+  nav > ul > li {
+    padding: 0.5rem;
+    font-size: calc(80%);
+    border: 2px solid var(--app-background-color);
   }
 }
