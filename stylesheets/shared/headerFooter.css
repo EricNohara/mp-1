@@ -5,11 +5,11 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem;
+  padding: 2%;
 }
 
 header {
-  padding-left: 3rem;
+  padding-left: 4%;
 }
 
 footer {
@@ -24,12 +24,12 @@ footer > p > a {
 
 header > h2 {
   font-size: 1.2rem;
-  margin-top: 0.5rem;
+  margin-top: 1%;
 }
 
 @media (max-width: 750px) {
   header {
     align-items: center;
-    padding-left: 1rem;
+    padding-left: 2%;
   }
 }
