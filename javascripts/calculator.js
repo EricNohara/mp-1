@@ -27,13 +27,23 @@ function getInputVals() {
   return [num1, num2];
 }
 
+// Helper function to set the value and styling of output depending on the output value
 function formatOutput(sol) {
   output.innerHTML = sol;
-  if (sol < 0) {
+
+  if (typeof sol == String) {
+    // this indicates that there was a divide by zero error
+    output.style.color = "red";
+  } else if (sol < 0) {
     output.style.color = "red";
   } else {
     output.style.color = "black";
   }
+}
+
+function formatOutputError(error) {
+  output.innerHTML = error;
+  output.style.color = "red";
 }
 
 function clearInputFields() {
@@ -74,9 +84,10 @@ timesBtn.addEventListener("click", (e) => {
 
 divideBtn.addEventListener("click", (e) => {
   e.preventDefault();
+
   const [num1, num2] = getInputVals();
-  const sol = num1 / num2;
-  formatOutput(sol);
+  if (num2 === 0) formatOutputError("Divide By Zero Error");
+  else formatOutput(num1 / num2);
 });
 
 powerBtn.addEventListener("click", (e) => {
