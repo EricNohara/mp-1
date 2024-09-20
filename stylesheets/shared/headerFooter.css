@@ -30,6 +30,6 @@ header > h2 {
 @media (max-width: 750px) {
   header {
     align-items: center;
-    padding-left: 0;
+    padding-left: 1rem;
   }
 }
